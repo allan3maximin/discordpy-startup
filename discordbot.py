@@ -1,4 +1,4 @@
-import discord
+from discord.ext import commands
 import ffmpeg
 from discord.ext import commands
 import asyncio
@@ -7,6 +7,7 @@ import subprocess
 from voice_generator import creat_WAV
 
 client = commands.Bot(command_prefix='.')
+token = os.environ['DISCORD_BOT_TOKEN']
 
 voice_client = None
 
